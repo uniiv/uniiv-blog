@@ -1,0 +1,31 @@
+{
+  "name": "tar-pack",
+  "version": "2.0.0",
+  "description": "Package and un-package modules of some sort (in tar/gz bundles).",
+  "scripts": {
+    "test": "mocha -R list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ForbesLindesay/tar-pack.git"
+  },
+  "license": "BSD",
+  "optionalDependencies": {
+    "graceful-fs": "1.2"
+  },
+  "dependencies": {
+    "uid-number": "0.0.3",
+    "once": "~1.1.1",
+    "debug": "~0.7.2",
+    "rimraf": "~2.2.0",
+    "fstream": "~0.1.22",
+    "tar": "~0.1.17",
+    "fstream-ignore": "0.0.7",
+    "readable-stream": "~1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "rfile": "*",
+    "mkdirp": "*"
+  }
+}

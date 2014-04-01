@@ -1,0 +1,19 @@
+{
+  "name": "generic-pool-redux",
+  "description": "Generic resource pooling in Javascript",
+  "version": "0.1.0",
+  "author": "Tim Griesser <tgriesser@gmail.com>",
+  "keywords": ["pool", "pooling", "throttle"],
+  "main": "pool.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bookshelf/generic-pool-redux.git"
+  },
+  "devDependencies": {
+      "expresso": ">0.0.0"
+  },
+  "engines": { "node": ">= 0.2.0" },
+  "scripts": {
+     "test": "expresso -I lib test/*.js"
+  }
+}

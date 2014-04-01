@@ -1,0 +1,60 @@
+{
+    "name": "aws-sdk",
+    "description": "AWS SDK for JavaScript",
+    "version": "2.0.0-rc9",
+    "author": {
+        "name":"Amazon Web Services",
+        "email":"",
+        "url":"http://aws.amazon.com/"
+    },
+    "homepage": "https://github.com/aws/aws-sdk-js",
+    "contributors": [
+      "Loren Segal <lsegal@amazon.com>",
+      "Trevor Rowe <trevrowe@amazon.com>"
+    ],
+    "devDependencies": {
+      "repl.history": "",
+      "jasmine-node": "",
+      "semver": "",
+      "coffee-script": "1.6.3",
+      "jshint": "",
+      "cucumber": "",
+      "coffeeify": ""
+    },
+    "dependencies": {
+      "xml2js": "0.2.4",
+      "xmlbuilder": "0.4.2"
+    },
+    "main": "lib/aws.js",
+    "directories":  {
+        "lib": "lib"
+    },
+    "engines": {
+        "node": ">= 0.6.0"
+    },
+    "repository": {
+        "type" : "git",
+        "url": "git://github.com/aws/aws-sdk-js"
+    },
+   "bugs" : {
+        "url" : "http://github.com/aws/aws-sdk-js/issues",
+        "mail" : ""
+    },
+    "licenses": [{
+        "type": "Apache 2.0",
+        "url": "http://github.com/aws/aws-sdk-js/raw/master/LICENSE.txt"
+    }],
+    "keywords": [
+        "api", "amazon","aws","ec2","simpledb","s3","sqs","ses","sns","route53","rds","elasticache","cloudfront","fps",
+        "cloudformation","cloudwatch","dynamodb","iam","swf","autoscaling","cloudsearch","elb",
+        "loadbalancing","emr","mapreduce","importexport","storagegateway","workflow","ebs","vpc","beanstalk",
+        "glacier"
+    ],
+    "scripts" : {
+        "test" : "npm -s run-script lint && npm -s run-script unit && ([ -f configuration ] && npm -s run-script integration || true)",
+        "unit" : "jasmine-node --noColor --coffee test",
+        "integration": "cucumber.js",
+        "lint" : "jshint lib",
+        "console": "./scripts/console"
+    }
+}

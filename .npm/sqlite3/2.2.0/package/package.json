@@ -1,0 +1,57 @@
+{
+    "name": "sqlite3",
+    "description": "Asynchronous, non-blocking SQLite3 bindings",
+    "version": "2.2.0",
+    "homepage": "http://github.com/mapbox/node-sqlite3",
+    "author": {
+        "name": "MapBox",
+        "url": "https://mapbox.com/"
+    },
+    "binary": {
+        "module_name": "node_sqlite3",
+        "module_path": "./lib",
+        "remote_uri": "http://node-sqlite3.s3.amazonaws.com",
+        "template": "{configuration}/{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz"
+    },
+    "contributors": [
+        "Konstantin Käfer <mail@kkaefer.com>",
+        "Dane Springmeyer <dane@mapbox.com>",
+        "Will White <will@mapbox.com>",
+        "Orlando Vazquez <ovazquez@gmail.com>",
+        "Artem Kustikov <kustikoff@gmail.com>",
+        "Eric Fredricksen <efredricksen@gmail.com>",
+        "John Wright <mrjjwright@gmail.com>",
+        "Ryan Dahl <ry@tinyclouds.org>",
+        "Tom MacWright <tom@mapbox.com>",
+        "Carter Thaxton <carter.thaxton@gmail.com>",
+        "Audrius Kažukauskas <audrius@neutrino.lt>",
+        "Johannes Schauer <josch@pyneo.org>",
+        "Nathan Rajlich <nathan@tootallnate.net>",
+        "AJ ONeal <coolaj86@gmail.com>",
+        "Mithgol"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/mapbox/node-sqlite3.git"
+    },
+    "dependencies": {
+        "node-pre-gyp": "~0.2.5"
+    },
+    "bundledDependencies": [
+        "node-pre-gyp"
+    ],
+    "engines": {
+        "node": ">= 0.8.0 < 0.11.0"
+    },
+    "scripts": {
+        "install": "node-pre-gyp install --fallback-to-build",
+        "pretest": "node test/support/createdb.js",
+        "test": "mocha -R spec --timeout 200000"
+    },
+    "licenses": [
+        {
+            "type": "BSD"
+        }
+    ],
+    "main": "./lib/sqlite3"
+}
