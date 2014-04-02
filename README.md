@@ -7,6 +7,6 @@ Uniiv Blog
 
 1. `npm install -g grunt-cli`
 2. `npm install`
-3. Rename `config.example.js` to `config.js` and ajust settings relative to your enviroment
+3. Copy `config.example.js` to `config.js` and ajust settings relative to your enviroment
 4. `grunt init` (and `grunt prod` if you want to run Ghost in production mode)
 5. `npm start`
