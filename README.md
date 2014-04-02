@@ -6,6 +6,7 @@ Uniiv Blog
 ##### Quickstart:
 
 1. `npm install -g grunt-cli`
-1. `npm install`
-1. `grunt init` (and `grunt prod` if you want to run Ghost in production mode)
-1. `npm start`
+2. `npm install`
+3. Rename `config.example.js` to `config.js` and ajust settings relative to your enviroment
+4. `grunt init` (and `grunt prod` if you want to run Ghost in production mode)
+5. `npm start`
